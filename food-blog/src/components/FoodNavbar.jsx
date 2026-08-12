@@ -1,61 +1,39 @@
-import React from 'react'
-import Logo from './Logo'
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import Logo from "./Logo";
 
 const FoodNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container fluid>
-          <Navbar.Brand href="#">
-            <Logo className="w-25" />
+      <Navbar
+        collapseOnSelect
+        expand="lg "
+        className="bg-body-tertiary shadow-lg rounded m-4"
+      >
+        <Container>
+          <Navbar.Brand href="#home">
+            <Logo style={{ height: "200px" }} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Add Blogs</Nav.Link>
-              <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#action2">Contact</Nav.Link>
-
-              {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown> */}
-              {/* <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link> */}
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto gap-3">
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="#pricing">Add Blog</Nav.Link>
+              <Nav.Link href="#pricing">About</Nav.Link>
+              <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            <Nav>
+              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link  href="#memes">Dank memes</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
   );
-}
+};
 
 export default FoodNavbar;
