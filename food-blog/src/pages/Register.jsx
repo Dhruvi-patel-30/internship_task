@@ -5,6 +5,7 @@ import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";
 import FormHeading from "../components/FormHeading";
 import Button from "../components/SiteButton";
+import LinkForm from "../components/LinkForm";
 
 const Register = () => {
   const [imgPreview, setImgPreview] = useState(assets.new3);
@@ -43,7 +44,9 @@ const Register = () => {
                       height: "130px",
                       width: "130px",
                       objectFit: "cover",
-                     
+                      border: "dashed",
+                      borderColor: "lightgreen",
+                      borderWidth: "1px",
                     }}
                   />
                   <Form.Control
@@ -74,6 +77,7 @@ const Register = () => {
                 />
               </div>
             </Form>
+            <LinkForm />
           </Card>
         </div>
       </div>
