@@ -5,7 +5,7 @@ import {Link } from 'react-router-dom'
 const LinkForm = () => {
   return (
     <>
-    {/* add comment */}
+    
       <Form.Text>
         Already have an account? <Link to="/login">Log in here</Link>
       </Form.Text>
