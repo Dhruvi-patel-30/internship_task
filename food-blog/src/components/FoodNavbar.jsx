@@ -8,7 +8,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Image } from "react-bootstrap";
 import { assets } from "../assets/assets";
-import "../index.css";
+import NavbarLink from "./NavbarLink";
 
 const FoodNavbar = () => {
   return (
@@ -49,12 +49,14 @@ const FoodNavbar = () => {
             className="text-center justify-content-center align-items-center bg-body-tertiary"
           >
             <Nav className="mx-lg-auto gap-4 align-items-center justify-content-center text-center my-lg-0 fw-bold">
-              <Nav.Link href="/home" className="custom-nav-link">
-                Home
-              </Nav.Link>
-              <Nav.Link href="#pricing">Add Blog</Nav.Link>
-              <Nav.Link href="#pricing">About</Nav.Link>
-              <Nav.Link href="#pricing">Contact</Nav.Link>
+              <NavbarLink
+                href={"./home"}
+                className={"custom-nav-link"}
+                pageName={"Home"}
+              />
+              <NavbarLink href={"./addblog"} pageName={"Add Blog"} />
+              <NavbarLink href={"./about"} pageName={"About"} />
+              <NavbarLink href={"./contact"} pageName={"Contact Us"} />
             </Nav>
 
             <Nav className="align-items-center justify-content-center gap-2 ms-lg-auto">
