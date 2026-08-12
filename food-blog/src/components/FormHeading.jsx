@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 const FormHeading = ({ heading, subHeading }) => {
-  // form  heading
+  
   return (
     <div className="ms-4">
       <h3
