@@ -2,32 +2,103 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "./Logo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { Image } from "react-bootstrap";
+import { assets } from "../assets/assets";
+import "../index.css";
 
 const FoodNavbar = () => {
   return (
     <>
       <Navbar
         collapseOnSelect
-        expand="lg "
-        className="bg-body-tertiary shadow-lg rounded m-4"
+        expand="lg"
+        className="bg-body-tertiary shadow-lg rounded m-3"
+        style={{ height: "70px" }}
       >
-        <Container>
-          <Navbar.Brand href="#home">
-            <Logo style={{ height: "200px" }} />
+        <Container className="d-flex align-items-center justify-content-between position-relative h-100">
+          <Navbar.Brand
+            href="#home"
+            className="d-flex align-items-center"
+            style={{
+              height: "100%",
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)",
+                height: "110px",
+                width: "auto",
+              }}
+            >
+              <Logo style={{ height: "100%", width: "auto" }} />
+            </div>
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto gap-3">
-              <Nav.Link href="/home">Home</Nav.Link>
+
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="text-center justify-content-center align-items-center bg-body-tertiary"
+          >
+            <Nav className="mx-lg-auto gap-4 align-items-center justify-content-center text-center my-lg-0 fw-bold">
+              <Nav.Link href="/home" className="custom-nav-link">
+                Home
+              </Nav.Link>
               <Nav.Link href="#pricing">Add Blog</Nav.Link>
               <Nav.Link href="#pricing">About</Nav.Link>
               <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link  href="#memes">Dank memes</Nav.Link>
+
+            <Nav className="align-items-center justify-content-center gap-2 ms-lg-auto">
+              <Nav.Link
+                href="#"
+                className="d-flex align-items-center justify-content-center"
+              >
+                <div className="position-relative d-inline-block">
+                  <FontAwesomeIcon
+                    icon={faHeart}
+                    style={{
+                      color: "black",
+                      fontSize: "30px",
+                    }}
+                  />
+                  <span
+                    className="position-absolute bg-danger top-0 start-100 translate-middle badge rounded-pill"
+                    style={{
+                      fontSize: "0.65rem",
+                    }}
+                  >
+                    0
+                  </span>
+                </div>
+              </Nav.Link>
+              <Nav.Link
+                href="#"
+                className="d-flex align-items-center justify-content-center"
+              >
+                <Image
+                  src={assets.new3}
+                  roundedCircle
+                  style={{ height: "45px", width: "45px", objectFit: "cover" }}
+                />
+              </Nav.Link>
+              <Nav.Link
+                href="#"
+                className="d-flex align-items-center justify-content-center"
+              >
+                <FontAwesomeIcon
+                  icon={faRightFromBracket}
+                  style={{ color: "rgb(10, 12, 15)", fontSize: "30px" }}
+                />
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

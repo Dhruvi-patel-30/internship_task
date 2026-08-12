@@ -2,13 +2,21 @@
 
 @import url("https://googleapis.com");
 
-
-html, body {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;     
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-html::-webkit-scrollbar, 
+html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-    display: none;             
+  display: none;
+}
+
+.custom-nav-link {
+  color: #2e5a1c !important;
+  text-decoration: none !important;
+  padding-bottom: 4px !important;
+  border-bottom: 3px solid #2e5a1c !important;
+  display: inline-block !important;
 }
