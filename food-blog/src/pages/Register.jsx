@@ -20,10 +20,28 @@ const Register = () => {
 
   return (
     <div
-      style={{ ...formBgImg, minHeight: "100vh", overflowY: "auto" }}
+      style={{
+        formBgImg,
+        minHeight: "100vh",
+        overflowY: "auto",
+        position: "relative",
+      }}
       className=" d-flex flex-column"
     >
-      <div className="row justify-content-center m-0 w-100 min-vh-100 align-items-center">
+      <div
+        className="position-absolute top-0 start-0 w-100 h-100 "
+        style={{
+          backgroundImage: `url(${assets.formBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(2px)",
+          zIndex: 0,
+        }}
+      />
+      <div
+        className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
+        style={{ position: "relative", zIndex: "1" }}
+      >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
             style={{ ...containerStyle, position: "relative" }}
@@ -77,7 +95,11 @@ const Register = () => {
                 />
               </div>
             </Form>
-            <LinkForm />
+            <LinkForm
+              text="Already havean account?"
+              link="Login here"
+              path="/login"
+            />
           </Card>
         </div>
       </div>
