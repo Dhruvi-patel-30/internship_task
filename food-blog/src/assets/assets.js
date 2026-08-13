@@ -2,15 +2,19 @@ import formBg from "./formBg.png";
 import logo from "./logo.png";
 import new3 from "./new3.png";
 import form from "./form.png";
-import slider1Bg from "./slider1Bg.png";
-
+import sliderBg3 from "./3sliderBg.png";
+import sweet from "./swwt1.png";
+import veg from "./last.png";
 
 export const assets = {
   formBg,
   logo,
   new3,
   form,
-  slider1Bg,
+  sliderBg3,
+  
+  sweet,
+  veg,
 };
 
 export const formBgImg = {

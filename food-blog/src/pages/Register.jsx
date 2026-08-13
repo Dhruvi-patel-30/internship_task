@@ -39,8 +39,8 @@ const Register = () => {
         }}
       />
       <div
-        className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
-        style={{ position: "relative", zIndex: "1" }}
+        className="row justify-content-center m-0 w-100 min-vh-100 align-items-center position-relative"
+        style={{ zIndex: "1" }}
       >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
@@ -96,7 +96,7 @@ const Register = () => {
               </div>
             </Form>
             <LinkForm
-              text="Already havean account?"
+              text="Already haven an account?"
               link="Login here"
               path="/login"
             />

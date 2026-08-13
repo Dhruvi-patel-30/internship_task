@@ -17,37 +17,42 @@ const FoodNavbar = () => {
         collapseOnSelect
         expand="lg"
         className="bg-body-tertiary shadow-lg rounded m-3"
-        style={{ height: "70px" }}
+        style={{ height: "70px", zIndex: 1050, position: "relative" }}
       >
         <Container className="d-flex align-items-center justify-content-between position-relative h-100">
-          <Navbar.Brand
-            href="#home"
-            className="d-flex align-items-center"
-            style={{
-              height: "100%",
-              position: "relative",
-              zIndex: 10,
-            }}
-          >
-            <div
+          {/* brand start */}
+          <div>
+            <Navbar.Brand
+              href="#home"
+              className="d-flex align-items-center"
               style={{
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)",
-                height: "110px",
-                width: "auto",
+                height: "100%",
+                position: "relative",
+                zIndex: 10,
               }}
             >
-              <Logo style={{ height: "100%", width: "auto" }} />
-            </div>
-          </Navbar.Brand>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  height: "110px",
+                  width: "auto",
+                }}
+              >
+                <Logo style={{ height: "100%", width: "auto" }} />
+              </div>
+            </Navbar.Brand>
+          </div>
+          {/* brand end */}
 
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav zIndex-0" />
 
           <Navbar.Collapse
-            id="responsive-navbar-nav"
+            id="responsive-navbar-nav "
             className="text-center justify-content-center align-items-center bg-body-tertiary"
           >
+            {/* nav link start */}
             <Nav className="mx-lg-auto gap-4 align-items-center justify-content-center text-center my-lg-0 fw-bold">
               <NavbarLink
                 href={"./home"}
@@ -58,7 +63,9 @@ const FoodNavbar = () => {
               <NavbarLink href={"./about"} pageName={"About"} />
               <NavbarLink href={"./contact"} pageName={"Contact Us"} />
             </Nav>
+            {/* nav link end */}
 
+            {/* nav icon start */}
             <Nav className="align-items-center justify-content-center gap-2 ms-lg-auto">
               <Nav.Link
                 href="#"
@@ -102,6 +109,7 @@ const FoodNavbar = () => {
                 />
               </Nav.Link>
             </Nav>
+            {/* nav icon start */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
