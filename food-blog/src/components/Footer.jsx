@@ -17,17 +17,17 @@ const Footer = () => {
       className="mt-auto shadow-lg w-100"
       style={{ backgroundColor: "rgba(252, 249, 243, 1.00)" }}
     >
-      <Container fluid="xxl" className="py-5 px-4">
+      <Container fluid="xxl" className="py-3 px-4">
         <Row className="gy-4">
           <Col xs={12} sm={6} lg={4} className="text-center text-md-start">
             <div
-              style={{ width: "150px", height: "100px" }}
-              className="mx-auto mx-md-0 mb-3"
+              style={{ width: "150px", height: "100px", marginTop: "-30px" }}
+              className="mb-2 mx-auto "
             >
               <Logo style={{ width: "100%" }} />
             </div>
             <p
-              className="text-muted mb-4 text-center text-md-start"
+              className="text-muted mb-4 text-center"
               style={{ lineHeight: "1.6" }}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -35,7 +35,7 @@ const Footer = () => {
               consequuntur repellat minus similique voluptatum ipsam dicta
               sapiente excepturi hic impedit, quas at?
             </p>
-            <div className="d-flex justify-content-center justify-content-md-start">
+            <div className="d-flex justify-content-center ">
               <FooterIcons />
             </div>
           </Col>
@@ -44,13 +44,13 @@ const Footer = () => {
             xs={12}
             sm={6}
             lg={2}
-            className="text-center text-md-start mt-lg-5"
+            className="text-center text-md-start mt-md-5 mt-lg-5"
           >
             <SiteText
               text="Quick Links"
-              className="fw-bold mb-3 d-block text-center text-md-start"
+              className="fw-bold mb-3 d-block text-center "
             />
-            <div className="d-flex flex-column align-items-center align-items-md-start">
+            <div className="d-flex flex-column align-items-center ">
               <NavLink />
             </div>
           </Col>
@@ -63,9 +63,9 @@ const Footer = () => {
           >
             <SiteText
               text="Categories"
-              className="fw-bold mb-3 d-block text-center text-md-start"
+              className="fw-bold mb-3 d-block text-center "
             />
-            <div className="d-flex flex-column align-items-center align-items-md-start">
+            <div className="d-flex flex-column align-items-center ">
               <CategotyList />
             </div>
           </Col>
@@ -78,7 +78,7 @@ const Footer = () => {
           >
             <SiteText
               text="Instagram Feed"
-              className="fw-bold mb-3 d-block text-center text-md-start"
+              className="fw-bold mb-3 d-block text-center "
             />
             <div className="d-flex justify-content-center justify-content-md-start fallback-wrapper">
               <InstaFeedImg />
@@ -98,7 +98,7 @@ const Footer = () => {
             sm={4}
             className="d-flex justify-content-center order-1 order-sm-2"
           >
-            <div style={{ maxWidth: "100px" }}>
+            <div style={{ maxWidth: "40px" }}>
               <Image
                 src={assets.logo2}
                 className="img-fluid object-fit-cover w-100"
