@@ -14,12 +14,12 @@ import Image from "react-bootstrap/Image";
 const Footer = () => {
   return (
     <footer
-      className="mt-auto shadow-lg w-100"
+      className="m-3 shadow-lg rounded"
       style={{ backgroundColor: "rgba(252, 249, 243, 1.00)" }}
     >
-      <Container fluid="xxl" className="py-3 px-4">
+      <Container fluid="xxl" className="py-3 px-0">
         <Row className="gy-4">
-          <Col xs={12} sm={6} lg={4} className="text-center text-md-start">
+          <Col xs={12} sm={6} lg={4} className="text-center text-md-start ">
             <div
               style={{ width: "150px", height: "100px", marginTop: "-30px" }}
               className="mb-2 mx-auto "

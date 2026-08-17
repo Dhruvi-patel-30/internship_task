@@ -12,7 +12,7 @@ import food11 from "./food11.jfif";
 import food12 from "./food12.jfif";
 import food13 from "./food13.jfif";
 import logo2 from "./logo6.png";
-
+import addBlogBG from "./addblogbg.png";
 
 export const assets = {
   formBg,
@@ -29,6 +29,7 @@ export const assets = {
   food11,
   food12,
   food13,
+  addBlogBG,
 };
 
 export const formBgImg = {
@@ -45,3 +46,5 @@ export const containerStyle = {
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
+
+

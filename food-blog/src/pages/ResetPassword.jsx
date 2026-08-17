@@ -1,5 +1,5 @@
 import React from "react";
-import { assets, formBgImg, containerStyle } from "../assets/assets";
+import { assets, containerStyle } from "../assets/assets";
 import { Container, Form, Card, Image, Col } from "react-bootstrap";
 import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";

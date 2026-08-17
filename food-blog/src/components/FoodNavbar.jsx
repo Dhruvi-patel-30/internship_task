@@ -24,7 +24,7 @@ const FoodNavbar = () => {
           {/* brand start */}
           <div>
             <Navbar.Brand
-              href="#home"
+              href="/"
               className="d-flex align-items-center"
               style={{
                 height: "100%",

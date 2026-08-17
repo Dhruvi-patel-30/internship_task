@@ -3,7 +3,7 @@ import NavbarLink from "./NavbarLink";
 
 const link = [
   { href: "./", page: "Home" },
-  { href: "./", page: "Add Blog" },
+  { href: "./addblog", page: "Add Blog" },
   { href: "./", page: "About" },
   { href: "./", page: "Contact" },
 ];
