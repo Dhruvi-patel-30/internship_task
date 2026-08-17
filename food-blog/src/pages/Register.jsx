@@ -45,7 +45,7 @@ const Register = () => {
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
             style={{ ...containerStyle, position: "relative" }}
-            className="shadow my-5 mx-4 mx-lg-5 p-3"
+            className="shadow my-5 mx-4 mx-lg-5 p-3 hover"
           >
             <Logo style={{ width: "150px" }} className={"ms-4 mt-2"} />
             <FormHeading

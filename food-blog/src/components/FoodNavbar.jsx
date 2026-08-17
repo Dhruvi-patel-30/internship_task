@@ -9,6 +9,7 @@ import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Image } from "react-bootstrap";
 import { assets } from "../assets/assets";
 import NavbarLink from "./NavbarLink";
+import NavLink from "./NavLink";
 
 const FoodNavbar = () => {
   return (
@@ -40,7 +41,10 @@ const FoodNavbar = () => {
                   width: "auto",
                 }}
               >
-                <Logo style={{ height: "100%", width: "auto" }} />
+                <Logo
+                  style={{ height: "100%", width: "auto" }}
+                  className={"hover"}
+                />
               </div>
             </Navbar.Brand>
           </div>
@@ -54,14 +58,7 @@ const FoodNavbar = () => {
           >
             {/* nav link start */}
             <Nav className="mx-lg-auto gap-4 align-items-center justify-content-center text-center my-lg-0 fw-bold">
-              <NavbarLink
-                href={"./home"}
-                className={"custom-nav-link"}
-                pageName={"Home"}
-              />
-              <NavbarLink href={"./addblog"} pageName={"Add Blog"} />
-              <NavbarLink href={"./about"} pageName={"About"} />
-              <NavbarLink href={"./contact"} pageName={"Contact Us"} />
+              <NavLink />
             </Nav>
             {/* nav link end */}
 
@@ -71,7 +68,7 @@ const FoodNavbar = () => {
                 href="#"
                 className="d-flex align-items-center justify-content-center"
               >
-                <div className="position-relative d-inline-block">
+                <div className="position-relative d-inline-block hover">
                   <FontAwesomeIcon
                     icon={faHeart}
                     style={{
@@ -91,7 +88,7 @@ const FoodNavbar = () => {
               </Nav.Link>
               <Nav.Link
                 href="#"
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center hover"
               >
                 <Image
                   src={assets.new3}
@@ -101,7 +98,7 @@ const FoodNavbar = () => {
               </Nav.Link>
               <Nav.Link
                 href="#"
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center hover"
               >
                 <FontAwesomeIcon
                   icon={faRightFromBracket}
@@ -109,7 +106,7 @@ const FoodNavbar = () => {
                 />
               </Nav.Link>
             </Nav>
-            {/* nav icon start */}
+            {/* nav icon end */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

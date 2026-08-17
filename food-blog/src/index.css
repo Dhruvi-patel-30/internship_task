@@ -20,3 +20,11 @@ body::-webkit-scrollbar {
   border-bottom: 3px solid #2e5a1c !important;
   display: inline-block !important;
 }
+
+.hover {
+  transition: transform 0.3s ease;
+}
+
+.hover:hover {
+  transform: translateY(-3px);
+}

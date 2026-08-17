@@ -9,19 +9,19 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const sliderData = [
   {
     id: 1,
-    image: `${assets.sliderBg3}`,
-    btn1Text: "GOOD FOOD GREAT MOOD",
-    headTex: "EAT Healthy,",
-    subTxt: "Live Happy",
-    desc: "Discover nourishing recipes, wellness tips and mindful eating ideas for a better you, every day.",
-  },
-  {
-    id: 2,
     image: `${assets.sweet}`,
     btn1Text: "EAT WELL, LIVE WELL",
     headTex: "Sweet Moments",
     subTxt: "Pure Happiness",
     desc: "Indulge in irresistible desserts made with love and the fitness ingredients. Treat yourself, you deserve it!",
+  },
+  {
+    id: 2,
+    image: `${assets.sliderBg3}`,
+    btn1Text: "GOOD FOOD, GREAT MOOD",
+    headTex: "EAT Healthy,",
+    subTxt: "Live Happy",
+    desc: "Discover nourishing recipes, wellness tips and mindful eating ideas for a better you, every day.",
   },
 
   {
@@ -38,7 +38,7 @@ const Slider = () => {
   return (
     <Carousel
       data-bs-theme="dark"
-      className="m-3 shadow-lg img-fluid rounded-3 overflow-hidden "
+      className="m-3 shadow-lg img-fluid rounded-3 overflow-hidden hover"
     >
       {sliderData.map((data) => (
         <Carousel.Item key={data.id}>
@@ -65,11 +65,11 @@ const Slider = () => {
                 />
               }
             />
-            <h1 className="text-dark  fw-xl display-3 fw-semibold">
+            <h1 className="text-dark  fw-xl display-3 fw-semibold hover">
               {data.headTex}
             </h1>
             <h2
-              className="display-1"
+              className="display-1 hover"
               style={{ fontFamily: "Brush Script MT", color: "green" }}
             >
               {data.subTxt}
@@ -98,7 +98,7 @@ const Slider = () => {
               <SiteButton
                 text="EAT WELL, LIVE WELL"
                 className={
-                  " text-success p-2 rounded-5 bg-success  border-0  mb-3 text-white"
+                  " text-success rounded-5 bg-success bg-transparent border border-success p-2 mb-3"
                 }
                 style={{ width: "35%", minWidth: "150px" }}
                 text="Browse Categories"

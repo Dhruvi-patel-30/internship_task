@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import ResetPassword from "./pages/ResetPassword";
 import HomePage from "./pages/HomePage";
 
+
 const App = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/ResetPassword" element={<ResetPassword />} />
-            <Route path="/home" element={<HomePage/>} />
+            <Route path="/" element={<HomePage/>} />
           </Routes>
         </BrowserRouter>
       </div>
