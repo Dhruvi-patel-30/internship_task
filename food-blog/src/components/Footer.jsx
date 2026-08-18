@@ -17,7 +17,7 @@ const Footer = () => {
       className="m-3 shadow-lg rounded"
       style={{ backgroundColor: "rgba(252, 249, 243, 1.00)" }}
     >
-      <Container fluid="xxl" className="py-3 px-0">
+      <div fluid="xxl" className="py-3 px-5">
         <Row className="gy-4">
           <Col xs={12} sm={6} lg={4} className="text-center text-md-start ">
             <div
@@ -74,13 +74,13 @@ const Footer = () => {
             xs={12}
             sm={6}
             lg={4}
-            className="text-center text-md-start mt-lg-5"
+            className="text-center  mt-lg-5"
           >
             <SiteText
               text="Instagram Feed"
               className="fw-bold mb-3 d-block text-center "
             />
-            <div className="d-flex justify-content-center justify-content-md-start fallback-wrapper">
+            <div className="d-flex justify-content-center  fallback-wrapper">
               <InstaFeedImg />
             </div>
           </Col>
@@ -110,7 +110,7 @@ const Footer = () => {
             <SiteText text="Privacy Policy | Terms & conditions" />
           </Col>
         </Row>
-      </Container>
+      </div>
     </footer>
   );
 };

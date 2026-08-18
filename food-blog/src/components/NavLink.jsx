@@ -4,8 +4,8 @@ import NavbarLink from "./NavbarLink";
 const link = [
   { href: "./", page: "Home" },
   { href: "./addblog", page: "Add Blog" },
-  { href: "./", page: "About" },
-  { href: "./", page: "Contact" },
+  { href: "./about", page: "About" },
+  { href: "./contact", page: "Contact" },
 ];
 
 const NavLink = ({className}) => {
