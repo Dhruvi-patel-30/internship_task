@@ -2,6 +2,11 @@
 
 @import url("https://googleapis.com");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   -ms-overflow-style: none;

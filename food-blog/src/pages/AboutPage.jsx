@@ -1,14 +1,22 @@
-import React from 'react'
-import Connected from '../components/Connected'
-import AboutMain from '../components/AboutMain'
+import React from "react";
+import Connected from "../components/Connected";
+import AboutMain from "../components/AboutMain";
+import AboutStory from "../components/AboutStory";
+import AboutCard from "../components/AboutCard";
+import AboutCardHead from "../components/AboutCardHead";
+import AboutCounter from "../components/AboutCounter";
 
 const AboutPage = () => {
   return (
     <div>
       <AboutMain />
-      <Connected />
+      <AboutStory />
+      <AboutCardHead />
+      <AboutCard />
+      <AboutCounter/>
+      {/* <Connected /> */}
     </div>
   );
-}
+};
 
-export default AboutPage
+export default AboutPage;

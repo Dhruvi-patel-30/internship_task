@@ -15,6 +15,17 @@ import logo2 from "./logo6.png";
 import addBlogBG from "./addblogbg.png";
 import connecting from "./connecting2.png";
 import aboutMain from "./aboutMain.png";
+import about from "./about3.png";
+import about2 from "./about3.jfif";
+import about3 from "./8 (9).png";
+import about4 from "./8 (8).png";
+import about5 from "./8 (5).png";
+import earth from "./earth.png";
+import leaf from "./leaf.png";
+import people from "./people4.png";
+import book from "./book.png";
+
+
 
 export const assets = {
   formBg,
@@ -34,6 +45,15 @@ export const assets = {
   addBlogBG,
   connecting,
   aboutMain,
+  about,
+  about3,
+  about4,
+  about5,
+  about2,
+  earth,
+  leaf,
+  people,
+  book,
 };
 
 export const formBgImg = {

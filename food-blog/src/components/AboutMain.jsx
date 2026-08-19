@@ -46,22 +46,20 @@ const AboutMain = () => {
             stories, and trusted tips to make every meal a memorable one.{" "}
           </p>
         </Col>
-        <Col xs={12} sm={6} lg={6} className="  text-center d-flex justify-content-center align-items-center">
+        <Col
+          xs={12}
+          sm={6}
+          lg={6}
+          className="  text-center d-flex justify-content-center align-items-center"
+        >
           <Image
             src={assets.aboutMain}
             thumbnail
-            className="hover"
+            className="hover object-fit-cover w-100 h-100 "
             style={{
-              float: "left",
               borderRadius: "50%",
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
               maxWidth: "550px",
               maxHeight: "400px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
             }}
           />
         </Col>
