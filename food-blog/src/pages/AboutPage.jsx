@@ -14,7 +14,6 @@ const AboutPage = () => {
       <AboutCardHead />
       <AboutCard />
       <AboutCounter/>
-      {/* <Connected /> */}
     </div>
   );
 };

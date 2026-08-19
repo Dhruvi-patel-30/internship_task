@@ -24,8 +24,8 @@ import earth from "./earth.png";
 import leaf from "./leaf.png";
 import people from "./people4.png";
 import book from "./book.png";
-
-
+import contactbg from "./contactbg2.png";
+import contactformbg from "./contactformbg.png";
 
 export const assets = {
   formBg,
@@ -54,6 +54,8 @@ export const assets = {
   leaf,
   people,
   book,
+  contactbg,
+  contactformbg,
 };
 
 export const formBgImg = {

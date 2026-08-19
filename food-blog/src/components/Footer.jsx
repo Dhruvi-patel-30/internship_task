@@ -24,7 +24,7 @@ const Footer = () => {
               style={{ width: "150px", height: "100px", marginTop: "-30px" }}
               className="mb-2 mx-auto "
             >
-              <Logo style={{ width: "100%" }} />
+              <Logo style={{ width: "100%" }} className="hover" />
             </div>
             <p
               className="text-muted mb-4 text-center"

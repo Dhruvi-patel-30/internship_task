@@ -11,8 +11,8 @@ const Connected = () => {
   return (
     <div
       fluid="xxl"
-      className="py-3 px-0 m-3 rounded "
-      style={{ backgroundColor: "rgba(246, 243, 238, 1.00)" }}
+      className="py-3 px-0 m-3 rounded"
+      style={{ backgroundColor: "rgba(247, 251, 243, 1.00)" }}
     >
       <Row className="gy-4 align-items-center">
         <Col xs={12} sm={12} lg={2} className="text-center px-4 ">
