@@ -27,7 +27,7 @@ const ResetPassword = () => {
       <div
         className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
         style={{ position: "relative", zIndex: 1 }}
-        image
+        
       >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
@@ -40,10 +40,30 @@ const ResetPassword = () => {
               subHeading="Enter your details below to create a new password."
             />
             <Form className="px-2 mt-5">
-              <UserInput type="email" placeholder="Enter Email" />
-              <UserInput type="text" placeholder="Enter Valid OTP" />
-              <UserInput type="Password" placeholder="Enter Password" />
-              <UserInput type="Password" placeholder="Enter Confirm Password" />
+              <UserInput
+                type="email"
+                placeholder="Enter Email"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="text"
+                placeholder="Enter Valid OTP"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="Password"
+                placeholder="Enter Password"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="Password"
+                placeholder="Enter Confirm Password"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
 
               <div className="d-flex justify-content-center mb-3 mt-4">
                 <Button

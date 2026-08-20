@@ -26,6 +26,9 @@ import people from "./people4.png";
 import book from "./book.png";
 import contactbg from "./contactbg2.png";
 import contactformbg from "./contactformbg.png";
+// import leaf1 from "./leaf4.png";
+// import leaf2 from "./leaf2.png";
+import profileHeadBg from './profilebg.png'
 
 export const assets = {
   formBg,
@@ -56,6 +59,9 @@ export const assets = {
   book,
   contactbg,
   contactformbg,
+  // leaf1,
+  // leaf2,
+  profileHeadBg,
 };
 
 export const formBgImg = {

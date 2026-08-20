@@ -1,5 +1,5 @@
 import React from "react";
-import { assets, containerStyle } from "../assets/assets"; 
+import { assets, containerStyle } from "../assets/assets";
 import { Container, Form, Card, Image, Col } from "react-bootstrap";
 import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";
@@ -27,7 +27,7 @@ const Login = () => {
       <div
         className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
         style={{ position: "relative", zIndex: 1 }}
-        image
+       
       >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
@@ -40,8 +40,18 @@ const Login = () => {
               subHeading="Login to continue your foodie journey "
             />
             <Form className="px-2 mt-5">
-              <UserInput type="email" placeholder="Enter Email" />
-              <UserInput type="Password" placeholder="Enter Password" />
+              <UserInput
+                type="email"
+                placeholder="Enter Email"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="Password"
+                placeholder="Enter Password"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
 
               <LinkForm
                 style={{ textAlign: "right" }}

@@ -2,16 +2,14 @@ import React from "react";
 import { assets } from "../assets/assets";
 import SiteText from "../components/SiteText";
 import { Form, Image } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faImage, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
-import { faSeedling } from "@fortawesome/free-solid-svg-icons";
 import SiteButton from "../components/SiteButton";
+import UserInput from "../components/UserInput";
 
 const AddBlog = () => {
   return (
     <div
       style={{ height: "auto", position: "relative" }}
-      className="d-flex flex-column m-3 rounded align-items-center mx-sm-2 pb-5"
+      className="d-flex flex-column m-3 rounded align-items-center pb-5"
     >
       <div
         className="position-absolute top-0 start-0 w-100 h-100 rounded"
@@ -42,7 +40,10 @@ const AddBlog = () => {
             controlId="blogImageUpload"
           >
             <Form.Label className="d-flex">
-              <SiteText text="Upload Blog Image" className="fs-6 fw-semibold" />
+              <SiteText
+                text="Upload Blog Image"
+                className="fs-6 fw-semibold mb-0"
+              />
             </Form.Label>
             <Image
               src={assets.food9}
@@ -58,26 +59,27 @@ const AddBlog = () => {
             />
           </Form.Group>
 
-          <Form.Group
+          {/* <Form.Group
             className="mb-3 w-100 text-start"
             controlId="blogTitleInput"
           >
             <Form.Label>
-              <SiteText text="Blog Title" className="fs-6 fw-semibold" />
+              <SiteText text="Blog Title" className="fs-6 fw-semibold mb-0" />
             </Form.Label>
             <Form.Control
               type="text"
               placeholder="Enter blog title"
               className="p-2"
             />
-          </Form.Group>
+          </Form.Group> */}
+          <UserInput type="email" placeholder="Enter Email" />
 
           <Form.Group
             className="mb-3 w-100 text-start"
             controlId="exampleForm.ControlTextarea1"
           >
             <Form.Label className="d-flex ">
-              <SiteText text={"Category"} className="fs-6 fw-semibold " />
+              <SiteText text={"Category"} className="fs-6 fw-semibold mb-0" />
             </Form.Label>
             <Form.Select className="p-2">
               <option>Select Category</option>
@@ -94,10 +96,13 @@ const AddBlog = () => {
 
           <Form.Group
             className="mb-3 w-100 text-start"
-            controlId="blogContentInput"
+            controlId="blogContentInput "
           >
             <Form.Label>
-              <SiteText text="Blog Description" className="fs-6 fw-semibold" />
+              <SiteText
+                text="Blog Description"
+                className="fs-6 fw-semibold mb-0"
+              />
             </Form.Label>
             <Form.Control
               as="textarea"

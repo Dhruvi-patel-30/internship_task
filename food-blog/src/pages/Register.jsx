@@ -79,13 +79,39 @@ const Register = () => {
               <UserInput
                 type="text"
                 placeholder="Enter First Name"
-                display="none"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
               />
-              <UserInput type="text" placeholder="Enter Last Name" />
-              <UserInput type="email" placeholder="Enter Email" />
-              <UserInput type="Password" placeholder="Enter Password" />
-              <UserInput type="Password" placeholder="Enter Confirm Password" />
-              <UserInput type="text" placeholder="Enter Valid OTP" />
+              <UserInput
+                type="text"
+                placeholder="Enter Last Name"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="email"
+                placeholder="Enter Email"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="Password"
+                placeholder="Enter Password"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="Password"
+                placeholder="Enter Confirm Password"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
+              <UserInput
+                type="text"
+                placeholder="Enter Valid OTP"
+                className="form-control p-2"
+                className2="mb-4  px-lg-4"
+              />
               <div className="d-flex justify-content-center mb-3 mt-4">
                 <Button
                   text="Send OTP"

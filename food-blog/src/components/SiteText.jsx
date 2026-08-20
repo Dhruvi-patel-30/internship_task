@@ -1,6 +1,6 @@
 import React from "react";
 
-const SiteText = ({ text, style, className }) => {
+const SiteText = ({ text, style, className, icon }) => {
   return (
     <>
       <p style={style} className={className}>

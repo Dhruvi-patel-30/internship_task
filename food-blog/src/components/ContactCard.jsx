@@ -56,6 +56,7 @@ const ContactCard = () => {
                       size="2x"
                       icon={card.icon}
                       style={{ color: "rgba(64, 109, 11, 1.00)" }}
+                      className="hover"
                     />
                   </div>
 

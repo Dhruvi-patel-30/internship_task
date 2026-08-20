@@ -87,7 +87,7 @@ const FoodNavbar = () => {
                 </div>
               </Nav.Link>
               <Nav.Link
-                href="#"
+                href="/profile"
                 className="d-flex align-items-center justify-content-center hover"
               >
                 <Image
@@ -97,7 +97,7 @@ const FoodNavbar = () => {
                 />
               </Nav.Link>
               <Nav.Link
-                href="#"
+                href="/login"
                 className="d-flex align-items-center justify-content-center hover"
               >
                 <FontAwesomeIcon
