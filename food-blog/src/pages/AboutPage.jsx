@@ -8,13 +8,13 @@ import AboutCounter from "../components/AboutCounter";
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <AboutMain />
       <AboutStory />
       <AboutCardHead />
       <AboutCard />
       <AboutCounter/>
-    </div>
+    </>
   );
 };
 

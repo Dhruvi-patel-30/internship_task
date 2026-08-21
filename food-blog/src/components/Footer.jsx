@@ -5,7 +5,7 @@ import FooterIcons from "./FooterIcons";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
-import CategotyList from "./CategotyList";
+import CategoryList from "./CategoryList";
 import SiteText from "./SiteText";
 import InstaFeedImg from "./InstaFeedImg";
 import { assets } from "../assets/assets";
@@ -24,17 +24,17 @@ const Footer = () => {
               style={{ width: "150px", height: "100px", marginTop: "-30px" }}
               className="mb-2 mx-auto "
             >
-              <Logo style={{ width: "100%" }} className="hover" />
+              <Logo style={{ width: "100%" }} />
             </div>
-            <p
-              className="text-muted mb-4 text-center"
-              style={{ lineHeight: "1.6" }}
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            <SiteText
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               animi aspernatur voluptatem error illo, nesciunt odit illum,
               consequuntur repellat minus similique voluptatum ipsam dicta
-              sapiente excepturi hic impedit, quas at?
-            </p>
+              sapiente excepturi hic impedit, quas at?"
+              className="text-muted mb-4 text-center"
+              style={{ lineHeight: "1.6" }}
+            />
+
             <div className="d-flex justify-content-center ">
               <FooterIcons />
             </div>
@@ -66,16 +66,11 @@ const Footer = () => {
               className="fw-bold mb-3 d-block text-center "
             />
             <div className="d-flex flex-column align-items-center ">
-              <CategotyList />
+              <CategoryList />
             </div>
           </Col>
 
-          <Col
-            xs={12}
-            sm={6}
-            lg={4}
-            className="text-center  mt-lg-5"
-          >
+          <Col xs={12} sm={6} lg={4} className="text-center  mt-lg-5">
             <SiteText
               text="Instagram Feed"
               className="fw-bold mb-3 d-block text-center "

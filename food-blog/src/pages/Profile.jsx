@@ -5,11 +5,11 @@ import ProfileDetail from '../components/ProfileDetail'
 
 const Profile = () => {
   return (
-    <div>
+    <>
       <ProfileHead/>
       <ProfileDetail/>
       <MyBlog/>
-    </div>
+    </>
   )
 }
 

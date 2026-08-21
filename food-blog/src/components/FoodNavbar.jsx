@@ -3,13 +3,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "./Logo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { Image } from "react-bootstrap";
 import { assets } from "../assets/assets";
 import NavbarLink from "./NavbarLink";
 import NavLink from "./NavLink";
+import FontAwesomeIcon from "./FontAwesomeIcon";
 
 const FoodNavbar = () => {
   return (
@@ -43,7 +43,7 @@ const FoodNavbar = () => {
               >
                 <Logo
                   style={{ height: "100%", width: "auto" }}
-                  className={"hover"}
+                 
                 />
               </div>
             </Navbar.Brand>
@@ -71,10 +71,7 @@ const FoodNavbar = () => {
                 <div className="position-relative d-inline-block hover">
                   <FontAwesomeIcon
                     icon={faHeart}
-                    style={{
-                      color: "black",
-                      fontSize: "30px",
-                    }}
+                    style={{ color: "black", fontSize: "30px" }}
                   />
                   <span
                     className="position-absolute bg-danger top-0 start-100 translate-middle badge rounded-pill"
@@ -102,7 +99,7 @@ const FoodNavbar = () => {
               >
                 <FontAwesomeIcon
                   icon={faRightFromBracket}
-                  style={{ color: "rgb(10, 12, 15)", fontSize: "30px" }}
+                  style={{ color: "black", fontSize: "30px" }}
                 />
               </Nav.Link>
             </Nav>

@@ -5,13 +5,16 @@ const FormHeading = ({ heading, subHeading }) => {
   return (
     <div className="ms-4">
       <h3
-        className="fw-bold mb-0"
+        className="fw-bold mb-0 "
         style={{ fontFamily: "Open Sans" }}
         className=" fw-semibold"
       >
         {heading}
       </h3>
-      <h2 style={{ fontFamily: "Brush Script MT", color: "green" }}>
+      <h2
+        style={{ fontFamily: "Brush Script MT", color: "green" }}
+        className="hover"
+      >
         {subHeading}
       </h2>
     </div>

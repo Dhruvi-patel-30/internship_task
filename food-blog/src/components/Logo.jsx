@@ -5,7 +5,7 @@ import { Image } from "react-bootstrap";
 const Logo = ({ style, className }) => {
   return (
     <>
-      <Image src={assets.logo} style={style} className={className} />
+      <Image src={assets.logo} style={style} className={`${className}, hover`} />
     </>
   );
 };

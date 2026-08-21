@@ -4,8 +4,9 @@ import { Container, Form, Card, Image, Col } from "react-bootstrap";
 import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";
 import FormHeading from "../components/FormHeading";
-import Button from "../components/SiteButton";
 import LinkForm from "../components/LinkForm";
+import FormLabel from "../components/FormLabel";
+import SiteButton from "../components/SiteButton";
 
 const Login = () => {
   return (
@@ -27,7 +28,6 @@ const Login = () => {
       <div
         className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
         style={{ position: "relative", zIndex: 1 }}
-       
       >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
@@ -44,7 +44,7 @@ const Login = () => {
                 type="email"
                 placeholder="Enter Email"
                 className="form-control p-2"
-                className2="mb-4  px-lg-4"
+                className2="mb-4 px-lg-4"
               />
               <UserInput
                 type="Password"
@@ -60,7 +60,7 @@ const Login = () => {
               />
 
               <div className="d-flex justify-content-center mb-3 mt-4">
-                <Button
+                <SiteButton
                   text="Login"
                   variant={"success"}
                   className={"btn justify-content-center p-2"}

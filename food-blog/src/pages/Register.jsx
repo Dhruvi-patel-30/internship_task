@@ -4,8 +4,8 @@ import { Container, Form, Card, Image, Col } from "react-bootstrap";
 import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";
 import FormHeading from "../components/FormHeading";
-import Button from "../components/SiteButton";
 import LinkForm from "../components/LinkForm";
+import SiteButton from "../components/SiteButton";
 
 const Register = () => {
   const [imgPreview, setImgPreview] = useState(assets.new3);
@@ -47,7 +47,7 @@ const Register = () => {
             style={{ ...containerStyle, position: "relative" }}
             className="shadow my-5 mx-4 mx-lg-5 p-3 hover"
           >
-            <Logo style={{ width: "150px" }} className={"ms-4 mt-2"} />
+            <Logo style={{ width: "150px" }} className={"ms-4 mt-2 "} />
             <FormHeading
               heading="Create Account"
               subHeading="join our community today!"
@@ -113,7 +113,7 @@ const Register = () => {
                 className2="mb-4  px-lg-4"
               />
               <div className="d-flex justify-content-center mb-3 mt-4">
-                <Button
+                <SiteButton
                   text="Send OTP"
                   variant={"success"}
                   className={"btn justify-content-center p-2"}

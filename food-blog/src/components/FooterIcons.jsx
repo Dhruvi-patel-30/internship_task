@@ -1,9 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faPinterestP } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import FontAwasomeIcon from "./FontAwesomeIcon";
+import {
+  faInstagram,
+  faFacebookF,
+  faPinterestP,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 const icons = [faFacebookF, faInstagram, faPinterestP, faYoutube];
 
@@ -23,7 +25,7 @@ const FooterIcons = () => {
               border: "1px solid rgb(207, 212, 177)",
             }}
           >
-            <FontAwesomeIcon icon={i} style={{ color: "rgb(65, 74, 9)" }} />
+            <FontAwasomeIcon icon={i} style={{ color: "rgb(65, 74, 9)" }} />
           </div>
         ))}
       </div>

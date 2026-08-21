@@ -1,11 +1,28 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import SiteText from "../components/SiteText";
-import { Form, Image } from "react-bootstrap";
+import { Form, FormControl, Image } from "react-bootstrap";
 import SiteButton from "../components/SiteButton";
 import UserInput from "../components/UserInput";
+import FormLabel from "../components/FormLabel";
+import { useState } from "react";
+import { useRef } from "react";
+import CategoryList from "../components/CategoryList.jsx";
 
 const AddBlog = () => {
+  const [image, setImage] = useState(assets.food9);
+  const hiddenFileInput = useRef(null);
+
+  const handleImageClick = () => {
+    hiddenFileInput.current.click();
+  };
+
+  const handleImageChange = (e) => {
+    if (e.target.files && e.target.files[0]) {
+      setImage(URL.createObjectURL(e.target.files[0]));
+    }
+  };
+
   return (
     <div
       style={{ height: "auto", position: "relative" }}
@@ -39,15 +56,22 @@ const AddBlog = () => {
             className="mb-3 w-100 text-start"
             controlId="blogImageUpload"
           >
-            <Form.Label className="d-flex">
-              <SiteText
-                text="Upload Blog Image"
-                className="fs-6 fw-semibold mb-0"
-              />
-            </Form.Label>
+            <FormLabel
+              text="Upload Blog Image"
+              className="fs-6 fw-semibold mb-0"
+              className2="d-flex"
+            />
+            <FormControl
+              type="file"
+              ref={hiddenFileInput}
+              onChange={handleImageChange}
+              className="d-none"
+              accept="image/*"
+            />
             <Image
-              src={assets.food9}
+              src={image}
               className="w-75 object-fit-cover p-1 rounded-5 img-fluid"
+              onClick={handleImageClick}
               style={{
                 backgroundPosition: "top center",
                 border: "2px dashed green",
@@ -59,58 +83,44 @@ const AddBlog = () => {
             />
           </Form.Group>
 
-          {/* <Form.Group
-            className="mb-3 w-100 text-start"
-            controlId="blogTitleInput"
-          >
-            <Form.Label>
-              <SiteText text="Blog Title" className="fs-6 fw-semibold mb-0" />
-            </Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter blog title"
-              className="p-2"
-            />
-          </Form.Group> */}
-          <UserInput type="email" placeholder="Enter Email" />
+          <UserInput
+            label={
+              <FormLabel text="Blog Title" className="fs-6 fw-semibold mb-0" />
+            }
+            type="text"
+            placeholder="Enter Blog Title"
+            className="p-2"
+            className2="mb-3 w-100 text-start"
+          />
 
           <Form.Group
             className="mb-3 w-100 text-start"
             controlId="exampleForm.ControlTextarea1"
           >
-            <Form.Label className="d-flex ">
-              <SiteText text={"Category"} className="fs-6 fw-semibold mb-0" />
-            </Form.Label>
-            <Form.Select className="p-2">
-              <option>Select Category</option>
-              <option>Recipes</option>
-              <option>Healthy Food</option>
-              <option>Street Food</option>
-              <option>Desserts</option>
-              <option>Drinks</option>
-              <option>Breakfast & Snacks</option>
-              <option>Vegetarian</option>
-              <option>Restaurant Reviews</option>
+            <FormLabel
+              text="Category"
+              className="fs-6 fw-semibold mb-0"
+              className2="d-flex"
+            />
+            <Form.Select className="p-2 focus-ring focus-ring-success border-success-subtle">
+              <option className="bg-success-subtle">Select Category</option>
+              <CategoryList />
             </Form.Select>
           </Form.Group>
 
-          <Form.Group
-            className="mb-3 w-100 text-start"
-            controlId="blogContentInput "
-          >
-            <Form.Label>
-              <SiteText
+          <UserInput
+            label={
+              <FormLabel
                 text="Blog Description"
                 className="fs-6 fw-semibold mb-0"
               />
-            </Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={4}
-              placeholder="Write your blog content here..."
-              className="p-2"
-            />
-          </Form.Group>
+            }
+            as="textarea"
+            rows={4}
+            placeholder="Write your blog content here..."
+            className="p-2"
+            className2="mb-3 w-100 text-start"
+          />
           <div className="d-flex flex-column flex-md-row flex-lg-row gap-4">
             <SiteButton
               text="cancle"

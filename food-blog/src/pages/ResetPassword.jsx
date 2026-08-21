@@ -4,8 +4,8 @@ import { Container, Form, Card, Image, Col } from "react-bootstrap";
 import UserInput from "../components/UserInput";
 import Logo from "../components/Logo";
 import FormHeading from "../components/FormHeading";
-import Button from "../components/SiteButton";
 import LinkForm from "../components/LinkForm";
+import SiteButton from "../components/SiteButton";
 
 const ResetPassword = () => {
   return (
@@ -27,7 +27,6 @@ const ResetPassword = () => {
       <div
         className="row justify-content-center m-0 w-100 min-vh-100 align-items-center"
         style={{ position: "relative", zIndex: 1 }}
-        
       >
         <div className="col-12 col-sm-10 col-md-8 col-lg-6">
           <Card
@@ -66,7 +65,7 @@ const ResetPassword = () => {
               />
 
               <div className="d-flex justify-content-center mb-3 mt-4">
-                <Button
+                <SiteButton
                   text="Send OTP"
                   variant={"success"}
                   className={"btn justify-content-center p-2"}

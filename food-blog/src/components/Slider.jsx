@@ -2,10 +2,9 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { assets } from "../assets/assets";
 import SiteButton from "../components/SiteButton";
-import { faLeaf } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import { faLeaf, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import FontAwesomeIcon from "./FontAwesomeIcon";
+import SiteText from "./SiteText";
 
 const sliderData = [
   {
@@ -59,16 +58,17 @@ const Slider = () => {
                 " text-success rounded-5 bg-success bg-opacity-10 border-0 p-2 mb-3"
               }
               style={{ width: "50%", minWidth: "200px" }}
-              icon={
+              icon2={
                 <FontAwesomeIcon
                   icon={faLeaf}
-                  style={{ color: "rgb(45, 170, 105)", paddingLeft: "5px" }}
+                  style={{ color: "rgb(45, 170, 105)", paddingRight: "5px" }}
                 />
               }
             />
-            <h1 className="text-dark  fw-xl display-3 fw-semibold hover">
-              {data.headTex}
-            </h1>
+            <SiteText
+              text={data.headTex}
+              className="text-dark  fw-xl display-3 fw-semibold hover"
+            />
             <h2
               className="display-1 hover"
               style={{ fontFamily: "Brush Script MT", color: "green" }}
