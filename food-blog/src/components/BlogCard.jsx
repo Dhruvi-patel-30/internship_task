@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Card, Button } from "react-bootstrap";
 import { assets } from "../assets/assets";
 import {
@@ -8,22 +8,58 @@ import {
   faBookOpen,
   faUser,
   faTag,
+  // faHeart as faHeartSolid,
 } from "@fortawesome/free-solid-svg-icons";
+// import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const BlogCard = () => {
+const BlogCard = ({ editIcon, deleteIcon, wishlistIcon }) => {
+  // const [isWishlisted, setIsWishlisted] = useState(false);
+
   return (
     <>
       <Col xs={12} md={6} lg={4} className="mb-3">
         <Card className="hover">
-          <Card.Img
-            variant="top"
-            src={assets.food11}
-            className="p-2 rounded-4 object-fit-cover"
-            style={{ height: "200px" }}
-          />
+          <div className="position-relative">
+            <Card.Img
+              variant="top"
+              src={assets.food11}
+              className="p-2 rounded-4 object-fit-cover"
+              style={{ height: "200px" }}
+            />
+
+            {wishlistIcon}
+            {/* <button
+              onClick={() => setIsWishlisted(!isWishlisted)}
+              className="position-absolute btn btn-link p-0 text-decoration-none"
+              style={{
+                top: "20px",
+                right: "20px",
+                zIndex: 10,
+                backgroundColor: "white",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0px 2px 5px rgba(0,0,0,0.15)",
+                border: "none",
+              }}
+            >
+              <FontAwesomeIcon
+                icon={isWishlisted ? faHeartSolid : faHeartRegular}
+                style={{
+                  // color: isWishlisted ? "red" : "gray",
+                  color: "red",
+                  fontSize: "1.2rem",
+                }}
+              />
+            </button> */}
+          </div>
+
           <Card.Body>
-            <Card.Title className="fw-bold  fs-3">
+            <Card.Title className="fw-bold fs-3">
               Title : <span className=" fw-semibold">hello</span>
             </Card.Title>
             <hr />
@@ -61,16 +97,8 @@ const BlogCard = () => {
               >
                 Read More
               </Button>
-
-              <Button
-                style={{ color: "rgba(73, 122, 35, 1.00)" }}
-                className="bg-transparent border-success p-2"
-              >
-                <FontAwesomeIcon icon={faPen} />
-              </Button>
-              <Button className="bg-transparent border-danger text-danger p-2">
-                <FontAwesomeIcon icon={faTrash} />
-              </Button>
+              {editIcon}
+              {deleteIcon}
             </div>
           </Card.Body>
         </Card>

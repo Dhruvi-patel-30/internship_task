@@ -10,6 +10,7 @@ import AddBlog from "./pages/AddBlog";
 import AboutPage from "./pages/AboutPage";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
+import WishListPage from "./pages/WishListPage";
 
 const App = () => {
   const location = useLocation();
@@ -29,7 +30,8 @@ const App = () => {
           <Route path="/addblog" element={<AddBlog />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/profile" element={<Profile/>} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/wishlist" element={<WishListPage />} />
         </Routes>
         {!condition && <Footer />}
       </div>

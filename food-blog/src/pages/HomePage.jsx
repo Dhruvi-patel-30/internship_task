@@ -1,11 +1,12 @@
 import React from "react";
 import Slider from "../components/Slider";
+import BlogAndUser from "../components/BlogAndUser";
 
 const HomePage = () => {
   return (
     <>
       <Slider />
-      <h1>home page</h1>
+      <BlogAndUser />
     </>
   );
 };

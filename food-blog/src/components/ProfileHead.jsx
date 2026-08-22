@@ -3,13 +3,7 @@ import { assets } from "../assets/assets";
 import SiteText from "../components/SiteText";
 import { Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faImage,
-//   faPenToSquare,
-//   faEnvelope,
-// } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-// import SiteButton from "../components/SiteButton";
 
 const ProfileHead = () => {
   return (
@@ -23,7 +17,6 @@ const ProfileHead = () => {
           backgroundImage: `url(${assets.profileHeadBg})`,
           backgroundSize: "cover",
           backgroundPosition: "top center",
-          // objectFit: "contain",
           zIndex: 0,
         }}
       />

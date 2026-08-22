@@ -2,8 +2,10 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import SiteButton from "../components/SiteButton";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FontAwesomeIcon from "./FontAwesomeIcon";
 import { assets } from "../assets/assets";
+import SiteText from "./SiteText";
 
 const AboutMain = () => {
   return (
@@ -19,32 +21,35 @@ const AboutMain = () => {
               " text-success rounded-5 bg-success bg-opacity-10 border-0 p-2 mb-3"
             }
             style={{ width: "50%", minWidth: "200px" }}
-            icon={
+            icon2={
               <FontAwesomeIcon
                 icon={faLeaf}
-                style={{ color: "rgb(45, 170, 105)", paddingLeft: "5px" }}
+                style={{ color: "rgb(45, 170, 105)", paddingRight: "5px" }}
               />
             }
           />
-          <h1 className="text-dark  fw-xl display-3 fw-semibold hover">
-            We're More Thean
-          </h1>
-          <h1
+
+          <SiteText
+            text="We're More Thean"
+            className="text-dark  fw-xl display-3 fw-semibold hover"
+          />
+
+          <SiteText
+            text="Just Recipes"
             className="  fw-xl display-3 fw-semibold hover"
             style={{ color: "rgb(45, 170, 105)" }}
-          >
-            Just Recipes
-          </h1>
-          <h2
+          />
+
+          <SiteText
+            text="We're a community that loves good food and good stories."
             className="display-1 hover fs-1 w-75 mx-auto text-center"
             style={{ fontFamily: "Brush Script MT" }}
-          >
-            We're a community that loves good food and good stories.
-          </h2>
-          <p className="text-dark mb-4 w-75 mx-auto text-center">
-            Foodie Blog is Your go-to place for delicious recipes, honest food
-            stories, and trusted tips to make every meal a memorable one.{" "}
-          </p>
+          />
+          <SiteText
+            text="Foodie Blog is Your go-to place for delicious recipes, honest food
+            stories, and trusted tips to make every meal a memorable one."
+            className="text-dark mb-4 w-75 mx-auto text-center"
+          />
         </Col>
         <Col
           xs={12}

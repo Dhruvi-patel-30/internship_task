@@ -48,8 +48,9 @@ const AboutCard = () => {
                     className="object-fit-contain w-100 h-100 hover"
                   />
                 </div>
-                <p className="mt-4 mb-1 fw-bold fs-5">{card.main}</p>
-                <p>{card.sub}</p>
+
+                <SiteText text={card.main} className="mt-4 mb-1 fw-bold fs-5" />
+                <SiteText text={card.sub} />
               </Card.Body>
             </Card>
           </Col>

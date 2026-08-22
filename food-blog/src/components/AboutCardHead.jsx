@@ -13,6 +13,7 @@ const AboutCardHead = () => {
           Blog
         </span>
       </h1>
+
       <SiteText
         className="fw-semibold"
         text="Because every bite tells a story!"

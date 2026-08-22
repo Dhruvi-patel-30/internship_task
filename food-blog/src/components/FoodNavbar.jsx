@@ -41,10 +41,7 @@ const FoodNavbar = () => {
                   width: "auto",
                 }}
               >
-                <Logo
-                  style={{ height: "100%", width: "auto" }}
-                 
-                />
+                <Logo style={{ height: "100%", width: "auto" }} />
               </div>
             </Navbar.Brand>
           </div>
@@ -65,7 +62,7 @@ const FoodNavbar = () => {
             {/* nav icon start */}
             <Nav className="align-items-center justify-content-center gap-2 ms-lg-auto">
               <Nav.Link
-                href="#"
+                href="wishlist"
                 className="d-flex align-items-center justify-content-center"
               >
                 <div className="position-relative d-inline-block hover">

@@ -1,8 +1,8 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { Image, Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Image, Form, Button, Row, Col } from "react-bootstrap";
 import SiteText from "./SiteText";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FontAwesomeIcon from "./FontAwesomeIcon";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import SiteButton from "./SiteButton";
@@ -61,7 +61,7 @@ const Connected = () => {
             <Form.Control
               type="email"
               placeholder="Enter Email..."
-              className="border-0 p-2 pe-5"
+              className="border-0 p-2 pe-5 "
               style={{ width: "100%" }}
             />
             <SiteButton

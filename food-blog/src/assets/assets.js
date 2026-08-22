@@ -29,6 +29,9 @@ import contactformbg from "./contactformbg.png";
 // import leaf1 from "./leaf4.png";
 // import leaf2 from "./leaf2.png";
 import profileHeadBg from './profilebg.png'
+import wishlistBg from './wishlistBg2.png'
+// import wishlistBg from "./3.png";
+
 
 export const assets = {
   formBg,
@@ -62,6 +65,7 @@ export const assets = {
   // leaf1,
   // leaf2,
   profileHeadBg,
+  wishlistBg,
 };
 
 export const formBgImg = {

@@ -4,6 +4,14 @@ import { assets } from "../assets/assets";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faLeaf,
+  faTrash,
+  faPen,
+  faBookOpen,
+  faUser,
+  faTag,
+} from "@fortawesome/free-solid-svg-icons";
+import {
   Image,
   Container,
   Row,
@@ -36,12 +44,25 @@ const MyBlog = () => {
       </div>
 
       <Row className="text-center mx-auto px-lg-4">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <BlogCard
+          editIcon={
+            <>
+              <Button
+                style={{ color: "rgba(73, 122, 35, 1.00)" }}
+                className="bg-transparent border-success p-2"
+              >
+                <FontAwesomeIcon icon={faPen} />
+              </Button>
+            </>
+          }
+          deleteIcon={
+            <>
+              <Button className="bg-transparent border-danger text-danger p-2">
+                <FontAwesomeIcon icon={faTrash} />
+              </Button>
+            </>
+          }
+        />
       </Row>
     </div>
   );

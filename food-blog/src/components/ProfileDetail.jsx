@@ -5,6 +5,8 @@ import SiteText from "./SiteText";
 import SiteButton from "./SiteButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faPen } from "@fortawesome/free-solid-svg-icons";
+import UserInput from "./UserInput";
+import FormLabel from "./FormLabel";
 
 const ProfileDetail = () => {
   return (
@@ -86,54 +88,42 @@ const ProfileDetail = () => {
 
           <div className=" me-0 me-md-3 me-lg-5 w-lg-50 w-md-50 p-3">
             <Form className="d-flex flex-column mt-2 col-12 col-md-12 col-lg-9">
-              <Form.Group
-                className="mb-3  text-start"
-                controlId="blogTitleInput"
-              >
-                <Form.Label>
-                  <SiteText
+              <UserInput
+                label={
+                  <FormLabel
                     text="First Name"
                     className="fs-6 fw-semibold mb-0"
                   />
-                </Form.Label>
-                <Form.Control
-                  type="text"
-                  value="dhruvi"
-                  placeholder="Enter blog title"
-                  className="p-2"
-                />
-              </Form.Group>
-              <Form.Group
-                className="mb-3 text-start"
-                controlId="blogTitleInput"
-              >
-                <Form.Label>
-                  <SiteText
+                }
+                type="text"
+                // value="dhruvi"
+                placeholder="Enter First Name"
+                className="p-2"
+                className2="mb-3 text-start"
+              />
+              <UserInput
+                label={
+                  <FormLabel
                     text="Last Name"
                     className="fs-6 fw-semibold mb-0"
                   />
-                </Form.Label>
-                <Form.Control
-                  type="text"
-                  value="akabari"
-                  placeholder="Enter blog title"
-                  className="p-2 0"
-                />
-              </Form.Group>
-              <Form.Group
-                className="mb-3  text-start"
-                controlId="blogTitleInput"
-              >
-                <Form.Label>
-                  <SiteText text="Email" className="fs-6 fw-semibold mb-0" />
-                </Form.Label>
-                <Form.Control
-                  type="text"
-                  value="dhruvi@gmail.com"
-                  placeholder="Enter blog title"
-                  className="p-2 "
-                />
-              </Form.Group>
+                }
+                type="text"
+                // value="akabari"
+                placeholder="Enter Last Name"
+                className="p-2"
+                className2="mb-3 text-start"
+              />
+              <UserInput
+                label={
+                  <FormLabel text="Email" className="fs-6 fw-semibold mb-0" />
+                }
+                type="text"
+                // value="dhruvi@gmail.com"
+                placeholder="Enter Last Name"
+                className="p-2"
+                className2="mb-3 text-start"
+              />
             </Form>
           </div>
         </Col>

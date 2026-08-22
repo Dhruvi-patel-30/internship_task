@@ -6,6 +6,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SiteText from "./SiteText";
 
 const cardData = [
   {
@@ -61,9 +62,17 @@ const ContactCard = () => {
                   </div>
 
                   <div className="w-100 text-center text-md-start">
-                    <p className="mb-1 fw-bold fs-5">{card.text1}</p>
-                    <p className="mb-1 text-break fw-semibold">{card.text2}</p>
-                    <p className="text-muted small mb-0">{card.text3}</p>
+                    <SiteText className="mb-1 fw-bold fs-5" text={card.text1} />
+
+                    <SiteText
+                      className="mb-1 text-break fw-semibold"
+                      text={card.text2}
+                    />
+
+                    <SiteText
+                      className="text-muted small mb-0"
+                      text={card.text3}
+                    />
                   </div>
                 </Card.Body>
               </Card>

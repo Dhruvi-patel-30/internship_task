@@ -11,18 +11,19 @@ import {
 import { faSeedling } from "@fortawesome/free-solid-svg-icons";
 import SiteButton from "../components/SiteButton";
 
-const Main = () => {
+const WishListHead = () => {
   return (
     <div
       style={{ height: "auto", position: "relative" }}
       className=" m-3 rounded "
     >
       <div
-        className="position-absolute top-0 start-0 w-100 h-100 rounded"
+        className="position-absolute top-0 start-0 w-100 h-100 rounded "
         style={{
-          backgroundImage: `url(${assets.contactbg})`,
+          backgroundImage: `url(${assets.wishlistBg})`,
           backgroundSize: "cover",
-          backgroundPosition: "top center",
+        //   backgroundPosition: "center",
+          objectFit: "contain",
           zIndex: 0,
         }}
       />
@@ -33,7 +34,7 @@ const Main = () => {
           zIndex: 1,
         }}
       >
-        <SiteButton
+        {/* <SiteButton
           text="GET IN TOUCH"
           className="text-success rounded-5 bg-success bg-opacity-10 border-0 p-2 mb-3"
           style={{ maxWidth: "250px", width: "100%" }}
@@ -44,22 +45,26 @@ const Main = () => {
               style={{ color: "rgb(45, 170, 105)" }}
             />
           }
-        />
+        /> */}
+        <div className="d-flex align-items-center gap-3">
+          <SiteText
+            text="My"
+            className="text-dark display-3 display-md-2 fw-semibold hover"
+          />
 
+          <SiteText
+            text="Wishlist"
+            className="display-3 display-md-4 hover "
+            style={{ fontFamily: "Brush Script MT, cursive", color: "green" }}
+          />
+        </div>
         <SiteText
-          text=" Contact Us"
-          className="text-dark display-3 display-md-2 fw-semibold hover"
+          text="Your Favourite Food Posts"
+          className="fs-4 fw-semibold display-md-4 hover text-success "
+        //   style={{ fontFamily: "Brush Script MT, cursive", color: "green" }}
         />
-
         <SiteText
-          text="We'd Love to Hear From You!"
-          className="display-5 display-md-4 hover"
-          style={{ fontFamily: "Brush Script MT, cursive", color: "green" }}
-        />
-
-        <SiteText
-          text="Have a question, suggestion, or feedback? Feel free to reach out –
-          we're here to help."
+          text="Here are the recepies and food stories you've saved for letter. Explore them anytime you want!"
           className="text-dark  fs-5 fs-md-4  "
         />
       </div>
@@ -67,4 +72,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default WishListHead;
